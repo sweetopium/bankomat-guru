@@ -28,9 +28,18 @@ body {
 .dropdown-item {
     border-left: 0 !important;
     border-right: 0 !important;
+    display: block !important;
 }
 .dropdown-item:hover, .dropdown-item:focus {
     background: #F2F2F2;
+}
+
+.navbar-toggler {
+    margin-right: 20px;
+}
+
+.navbar-container {
+    padding-right: 0;
 }
 
 .navbar-block {
@@ -41,6 +50,33 @@ body {
 .links--list {
     display: flex;
     align-items: center;
+}
+
+.links--list__mobile {
+    position: absolute;
+    background: white;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    top: 77px;
+    min-height: 230px;
+}
+
+.links--list__mobile .nav-items {
+    display: block;
+}
+.links--list__mobile .navbar--dropdown-nav__item {
+    display: block;
+}
+
+.links--list__mobile .navbar--dropdown-nav__item a {
+    border-right: none;
+    border-left: none;
+}
+
+.is__hidden {
+    display: none !important;
 }
 
 .nav-items {
@@ -57,6 +93,22 @@ body {
 .navbar--location {
     display: flex;
     align-items: center;
+}
+
+.navbar--location a {
+    position: relative;
+}
+
+.navbar--location a:before {
+    content: ' ';
+    position: absolute;
+    background-image: url('../images/geo-pin.svg');
+    background-size: 13px 13px;
+    height: 13px;
+    width: 13px;
+    top: 5px;
+    left: -20px;
+
 }
 
 .navbar--dropdown-nav {
@@ -97,6 +149,48 @@ body {
     width: 100%;
     flex: 1;
 }
+
+.navbar--search__item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.links--list .navbar--search__item {
+    padding-right: 10px;
+}
+
+.search--form .navbar--search__item {
+    background: var(--dark-blue);
+}
+
+.search--input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search--input .form-control {
+    border: none;
+}
+
+.search--form .navbar--search__item img {
+    filter: brightness(0) invert(1);
+}
+
+.search--form__hidden {
+    display: none;
+}
+
+.links--list__hidden {
+    display: none;
+}
+
+
+
 
 
 .hero-section {
@@ -282,7 +376,7 @@ body {
 .single-post--tag {
     position: absolute;
     right: 0;
-    background: green;
+    background: #219653;
     padding: 5px 20px;
     color: #fff;
     font-size: 14px;
@@ -314,12 +408,31 @@ body {
 
 
 .footer-block {
-    padding: 35px 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .footer--city-selector {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.footer--city-selector a {
+    position: relative;
+
+}
+
+.footer--city-selector a:before {
+    content: ' ';
+    position: absolute;
+    background-image: url('../images/geo-pin-white.svg');
+    background-size: 13px 13px;
+    height: 13px;
+    width: 13px;
+    top: 5px;
+    left: -20px;
+
 }
 
 .footer-main-nav {
@@ -356,7 +469,7 @@ body {
 }
 
 .footer-block--bottom {
-    padding: 15px 0 0 0;
+    padding-top: 15px;
 }
 
 .footer-section--bottom {
@@ -382,8 +495,13 @@ body {
     font-weight: 300;
 }
 
+.post--tags .list-inline-item {
+    margin-bottom: 30px;
+}
+
 .posts-block {
-    padding: 70px 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .post--tag {
