@@ -11,81 +11,160 @@
 
 <section class="bg-light-gray hero-section">
     <div class="container">
-
-        <nav class="navbar navbar-light bg-white navbar-block">
-            <div class="container-fluid h-100">
-                <div class="row h-100">
-                    <div class="col-md-2 h-100 logo-block">
-                        <a class="navbar-brand" href="#">
-                            <img src="static/images/logo-blue.svg" class="d-inline-block align-top" alt="">
-                        </a>
-                    </div>
-                    <div class="col-md-10 links--list h-100">
-                        <div class="row d-flex h-100">
-                            <div class="col-md-2 navbar--location">
-                                <a href="#" class="text-blue">
-                                    Санкт-Петербург
+        <nav class="navbar navbar-light navbar-expand-lg bg-white navbar-block">
+            <div class="container-fluid h-100 navbar-container">
+                <a class="navbar-brand" href="#">
+                    <img src="static/images/logo-blue.svg" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="links--list h-100 collapse navbar-collapse ml-5">
+                    <div class="row d-flex h-100">
+                        <div class="col-md-2 navbar--location">
+                            <a href="#" class="text-blue">
+                                Санкт-Петербург
+                            </a>
+                        </div>
+                        <div class="col-md-10 nav-items">
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="bankiMob"
+                                   href="#">Банки</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="bankomatiMob"
+                                   href="#">Банкоматы</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="uslugiMob"
+                                   href="#">Услуги банков</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="articlesMob"
+                                   href="#">Статьи</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="newsMob"
+                                   href="#">Новости</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--search__item">
+                                <a class="nav-link text-blue" id="initSearch"
+                                   href="#"><img src="static/images/seach.svg"/>
                                 </a>
                             </div>
-                            <div class="col-md-10 nav-items">
-                                <div class="navbar--dropdown-nav__item">
-                                    <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="banki"
-                                       href="#">Банки</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Банкоматы</a></li>
-                                        <li><a class="dropdown-item" href="#">Отделения</a></li>
-                                        <li><a class="dropdown-item" href="#">Что-то еще</a></li>
-                                    </ul>
-                                </div>
-                                <div class="navbar--dropdown-nav__item">
-                                    <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="bankomati"
-                                       href="#">Банкоматы</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Банкоматы</a></li>
-                                        <li><a class="dropdown-item" href="#">Отделения</a></li>
-                                        <li><a class="dropdown-item" href="#">Что-то еще</a></li>
-                                    </ul>
-                                </div>
-                                <div class="navbar--dropdown-nav__item">
-                                    <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="uslugi"
-                                       href="#">Услуги банков</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Банкоматы</a></li>
-                                        <li><a class="dropdown-item" href="#">Отделения</a></li>
-                                        <li><a class="dropdown-item" href="#">Что-то еще</a></li>
-                                    </ul>
-                                </div>
-                                <div class="navbar--dropdown-nav__item">
-                                    <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="articles"
-                                       href="#">Статьи</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Банкоматы</a></li>
-                                        <li><a class="dropdown-item" href="#">Отделения</a></li>
-                                        <li><a class="dropdown-item" href="#">Что-то еще</a></li>
-                                    </ul>
-                                </div>
-                                <div class="navbar--dropdown-nav__item">
-                                    <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="news"
-                                       href="#">Новости</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Банкоматы</a></li>
-                                        <li><a class="dropdown-item" href="#">Отделения</a></li>
-                                        <li><a class="dropdown-item" href="#">Что-то еще</a></li>
-                                    </ul>
-                                </div>
-                                <div class="navbar--search__item">
-                                    <a class="nav-link text-blue btn-buy-list" id="search"
-                                       href="#"><img src="static/images/seach.svg" />
-                                    </a>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search--form h-100 search--form__hidden">
+                    <div class="row d-flex h-100">
+                        <div class="col-md-7 search--input">
+                            <input class="form-control" placeholder="Поиск по сайту...">
+                        </div>
+                        <div class="col-md-5 nav-items">
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="city"
+                                   href="#">Город</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Москва</a></li>
+                                    <li><a class="dropdown-item" href="#">Омск</a></li>
+                                    <li><a class="dropdown-item" href="#">Новосибирск</a></li>
+                                    <li><a class="dropdown-item" href="#">Сколько макс?</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="locations"
+                                   href="#">Отделение банка</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--search__item">
+                                <a class="nav-link text-blue btn-buy-list" id="search"
+                                   href="#"><img src="static/images/seach.svg" alt="search"/>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="links--list__mobile is__hidden">
+                <div class="nav-items">
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="banki"
+                           href="#">Банки</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="bankomati"
+                           href="#">Банкоматы</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="uslugi"
+                           href="#">Услуги банков</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="articles"
+                           href="#">Статьи</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="news"
+                           href="#">Новости</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </nav>
-
-
         <div class="row hero-slider">
             <div class="col-md-6">
                 <div class="page-header--title">
@@ -97,16 +176,16 @@
                         accumsan, ultrices. Interdum est volutpat pellentesque vitae maecenas.
                     </p>
                 </div>
-                <div class="page-header--buttons row">
+                <div class="page-header--buttons row mt-5">
                     <div class="col-md-6">
                         <a class="btn btn-block btn-blue">Банк в Санк-Петербурге</a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0">
                         <a class="btn btn-block btn-outline-blue">Банкоматы в Санк-Петербурге</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 offset-1">
+            <div class="col-md-5 offset-md-1 mt-4 mt-md-0">
                 <img src="static/images/header-image.png" class="img-fluid" alt="header image">
             </div>
         </div>
@@ -167,31 +246,31 @@
             </div>
         </div>
         <div class="row banks--list">
-            <div class="col-md-3 bank--logo">
+            <div class="col-md-3 mb-4 mb-sm-0 bank--logo">
                 <a href="#"><img src="static/images/logos/renessans.svg" alt="logo"/></a>
             </div>
-            <div class="col-md-3 bank--logo">
+            <div class="col-md-3 mb-4 mb-sm-0 bank--logo">
                 <a href="#"><img src="static/images/logos/akbars.svg" alt="logo"/></a>
             </div>
-            <div class="col-md-3 bank--logo">
+            <div class="col-md-3 mb-4 mb-sm-0 bank--logo">
                 <a href="#"><img src="static/images/logos/alfabank.svg" alt="logo"/></a>
             </div>
-            <div class="col-md-3 bank--logo">
+            <div class="col-md-3 mb-4 mb-sm-0 bank--logo">
                 <a href="#"><img src="static/images/logos/uralsib.svg" alt="logo"/></a>
             </div>
         </div>
-        <div class="row banks--list">
-            <div class="col-md-3 bank--logo">
+        <div class="row banks--list mt-0 mt-md-5">
+            <div class="col-md-3 mb-4 mb-sm-0  bank--logo">
                 <a href="#"><img src="static/images/logos/gazprombank.svg" alt="logo"/></a>
             </div>
-            <div class="col-md-3 bank--logo">
+            <div class="col-md-3 mb-4 mb-sm-0 bank--logo">
                 <a href="#"><img src="static/images/logos/absolutbank.svg" alt="logo"/></a>
             </div>
-            <div class="col-md-3 bank--logo">
+            <div class="col-md-3 mb-4 mb-sm-0 bank--logo">
                 <a href="#"><img src="static/images/logos/tinkoff.svg" alt="logo"/></a>
             </div>
-            <div class="col-md-3 bank--logo">
-                <a href="#"><img src="static/images/logos/mkb.svg" alt="logo"/></a>
+            <div class="col-md-3 mb-4 mb-sm-0 bank--logo">
+                <a href="#"><img src="static/images/logos/alfabank.svg" alt="logo"/></a>
             </div>
         </div>
     </div>
@@ -205,96 +284,156 @@
             </div>
         </div>
         <div class="row news--list">
-            <div class="col-md-3 single-post">
-                <div class="single-post--image">
-                    <div class="single-post--tag">
-                        <span>Сбербанк</span>
+            <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+                <div class="single-post">
+                    <div class="single-post--image">
+                        <div class="single-post--tag">
+                            <span>Сбербанк</span>
+                        </div>
+                        <div class="single-post--overlay">
+                            <div class="date-published">
+                                1 августа 2019
+                            </div>
+
+                            <div class="comments-count">
+                                12 комментариев
+                            </div>
+                        </div>
+                        <img src="static/images/news-image.jpg" class="img-fluid" alt="some news"/>
                     </div>
-                    <img src="static/images/news-image.jpg" class="img-fluid" alt="some news"/>
-                </div>
-                <div class="single-post--title">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-                </div>
-                <div class="single-post--text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur purus a ac non egestas
-                        commodo tortor ullamcorper. Arcu sit gravida phasellus sit turpis. Gravida justo, venenatis nisl
-                        neque cursus. Gravida enim faucibus egestas arcu. </p>
-                </div>
-                <div class="single-post--meta">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">#Сбербанк</a></li>
-                        <li class="list-inline-item"><a href="#">#Полезное</a></li>
-                        <li class="list-inline-item"><a href="#">#Новости</a></li>
-                    </ul>
+                    <div class="single-post--content">
+                        <div class="single-post--title">
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                        </div>
+                        <div class="single-post--text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur purus a ac non
+                                egestas
+                                commodo tortor ullamcorper. Arcu sit gravida phasellus sit turpis. Gravida justo,
+                                venenatis nisl
+                                neque cursus. Gravida enim faucibus egestas arcu. </p>
+                        </div>
+                        <div class="single-post--meta">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#">#Сбербанк</a></li>
+                                <li class="list-inline-item"><a href="#">#Полезное</a></li>
+                                <li class="list-inline-item"><a href="#">#Новости</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 single-post">
-                <div class="single-post--image">
-                    <div class="single-post--tag">
-                        <span>Сбербанк</span>
+            <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+                <div class="single-post">
+                    <div class="single-post--image">
+                        <div class="single-post--tag">
+                            <span>Сбербанк</span>
+                        </div>
+                        <div class="single-post--overlay">
+                            <div class="date-published">
+                                1 августа 2019
+                            </div>
+
+                            <div class="comments-count">
+                                12 комментариев
+                            </div>
+                        </div>
+                        <img src="static/images/news-image.jpg" class="img-fluid" alt="some news"/>
                     </div>
-                    <img src="static/images/news-image.jpg" class="img-fluid" alt="some news"/>
-                </div>
-                <div class="single-post--title">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-                </div>
-                <div class="single-post--text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur purus a ac non egestas
-                        commodo tortor ullamcorper. Arcu sit gravida phasellus sit turpis. Gravida justo, venenatis nisl
-                        neque cursus. Gravida enim faucibus egestas arcu. </p>
-                </div>
-                <div class="single-post--meta">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">#Сбербанк</a></li>
-                        <li class="list-inline-item"><a href="#">#Полезное</a></li>
-                        <li class="list-inline-item"><a href="#">#Новости</a></li>
-                    </ul>
+                    <div class="single-post--content">
+                        <div class="single-post--title">
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                        </div>
+                        <div class="single-post--text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur purus a ac non
+                                egestas
+                                commodo tortor ullamcorper. Arcu sit gravida phasellus sit turpis. Gravida justo,
+                                venenatis nisl
+                                neque cursus. Gravida enim faucibus egestas arcu. </p>
+                        </div>
+                        <div class="single-post--meta">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#">#Сбербанк</a></li>
+                                <li class="list-inline-item"><a href="#">#Полезное</a></li>
+                                <li class="list-inline-item"><a href="#">#Новости</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 single-post">
-                <div class="single-post--image">
-                    <div class="single-post--tag">
-                        <span>Сбербанк</span>
+            <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+                <div class="single-post">
+                    <div class="single-post--image">
+                        <div class="single-post--tag">
+                            <span>Сбербанк</span>
+                        </div>
+                        <div class="single-post--overlay">
+                            <div class="date-published">
+                                1 августа 2019
+                            </div>
+
+                            <div class="comments-count">
+                                12 комментариев
+                            </div>
+                        </div>
+                        <img src="static/images/news-image.jpg" class="img-fluid" alt="some news"/>
                     </div>
-                    <img src="static/images/news-image.jpg" class="img-fluid" alt="some news"/>
-                </div>
-                <div class="single-post--title">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-                </div>
-                <div class="single-post--text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur purus a ac non egestas
-                        commodo tortor ullamcorper. Arcu sit gravida phasellus sit turpis. Gravida justo, venenatis nisl
-                        neque cursus. Gravida enim faucibus egestas arcu. </p>
-                </div>
-                <div class="single-post--meta">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">#Сбербанк</a></li>
-                        <li class="list-inline-item"><a href="#">#Полезное</a></li>
-                        <li class="list-inline-item"><a href="#">#Новости</a></li>
-                    </ul>
+                    <div class="single-post--content">
+                        <div class="single-post--title">
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                        </div>
+                        <div class="single-post--text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur purus a ac non
+                                egestas
+                                commodo tortor ullamcorper. Arcu sit gravida phasellus sit turpis. Gravida justo,
+                                venenatis nisl
+                                neque cursus. Gravida enim faucibus egestas arcu. </p>
+                        </div>
+                        <div class="single-post--meta">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#">#Сбербанк</a></li>
+                                <li class="list-inline-item"><a href="#">#Полезное</a></li>
+                                <li class="list-inline-item"><a href="#">#Новости</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 single-post">
-                <div class="single-post--image">
-                    <div class="single-post--tag">
-                        <span>Сбербанк</span>
+            <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+                <div class="single-post">
+                    <div class="single-post--image">
+                        <div class="single-post--tag">
+                            <span>Сбербанк</span>
+                        </div>
+                        <div class="single-post--overlay">
+                            <div class="date-published">
+                                1 августа 2019
+                            </div>
+
+                            <div class="comments-count">
+                                12 комментариев
+                            </div>
+                        </div>
+                        <img src="static/images/news-image.jpg" class="img-fluid" alt="some news"/>
                     </div>
-                    <img src="static/images/news-image.jpg" class="img-fluid" alt="some news"/>
-                </div>
-                <div class="single-post--title">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-                </div>
-                <div class="single-post--text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur purus a ac non egestas
-                        commodo tortor ullamcorper. Arcu sit gravida phasellus sit turpis. Gravida justo, venenatis nisl
-                        neque cursus. Gravida enim faucibus egestas arcu. </p>
-                </div>
-                <div class="single-post--meta">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">#Сбербанк</a></li>
-                        <li class="list-inline-item"><a href="#">#Полезное</a></li>
-                        <li class="list-inline-item"><a href="#">#Новости</a></li>
-                    </ul>
+                    <div class="single-post--content">
+                        <div class="single-post--title">
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                        </div>
+                        <div class="single-post--text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur purus a ac non
+                                egestas
+                                commodo tortor ullamcorper. Arcu sit gravida phasellus sit turpis. Gravida justo,
+                                venenatis nisl
+                                neque cursus. Gravida enim faucibus egestas arcu. </p>
+                        </div>
+                        <div class="single-post--meta">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#">#Сбербанк</a></li>
+                                <li class="list-inline-item"><a href="#">#Полезное</a></li>
+                                <li class="list-inline-item"><a href="#">#Новости</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -304,10 +443,10 @@
 <section class="bg-blue footer-section">
     <div class="container footer-block">
         <div class="row footer--main">
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-12">
                 <img src="static/images/logo-white.svg" class="img-fluid" alt="logo">
             </div>
-            <div class="col-md-2 footer--city-selector">
+            <div class="col-lg-2 col-md-12 my-3 my-md-0  footer--city-selector">
                 <a href="#" class="text-white">Санкт Петербург</a>
             </div>
             <div class="col-md-7 footer-main-nav">
@@ -328,7 +467,6 @@
         </div>
     </div>
 </section>
-
 <section class="bg-blue footer-section--bottom">
     <div class="container footer-block--bottom">
         <div class="row">
@@ -343,54 +481,6 @@
     </div>
 </section>
 
-<script>
-    let toClose = false;
-
-    function toggle(e) {
-        e.stopPropagation();
-        let btn = this;
-        btn.classList.remove("text-gray");
-        btn.classList.add("text-blue");
-        let menu = btn.nextSibling;
-
-        while (menu && menu.nodeType !== 1) {
-            menu = menu.nextSibling
-        }
-        if (!menu) return;
-        if (menu.style.display !== 'block') {
-            menu.style.display = 'block';
-            if (toClose) toClose.style.display = "none";
-            toClose = menu;
-        } else {
-            menu.style.display = 'none';
-            toClose = false;
-            btn.classList.remove("text-blue");
-            btn.classList.add("text-gray");
-        }
-
-    }
-
-    function closeAll() {
-        toClose.style.display = 'none';
-        document.querySelectorAll(".btn-buy-list").forEach(function (btn) {
-            btn.classList.remove("text-blue");
-            btn.classList.add("text-gray");
-        })
-    }
-
-    window.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".btn-buy-list").forEach(function (btn) {
-            btn.addEventListener("click", toggle, true);
-        });
-    });
-
-    window.onclick = function (event) {
-        if (toClose) {
-            closeAll.call(event.target);
-        }
-    };
-
-</script>
-
+<script src="static/js/main.js"></script>
 </body>
 </html>

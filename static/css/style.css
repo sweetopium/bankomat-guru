@@ -198,7 +198,8 @@ body {
 }
 
 .hero-slider {
-    padding: 88px 0 16px 0;
+    padding-top: 88px;
+    padding-bottom: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -219,12 +220,13 @@ body {
 }
 
 .page-header--buttons {
-    margin-top: 97px;
+    /*margin-top: 97px;*/
 }
 
 
 .features-block {
-    padding: 85px 0;
+    padding-top: 85px;
+    padding-bottom: 85px;
 }
 
 .features--title {
@@ -265,7 +267,8 @@ body {
 
 
 .banks-block {
-    padding: 85px 0;
+    padding-top: 85px;
+    padding-bottom: 85px;
 }
 
 .banks--title h3 {
@@ -292,7 +295,8 @@ body {
 
 
 .news-block {
-    padding: 85px 0;
+    padding-top: 85px;
+    padding-bottom: 85px;
 }
 
 .news--title h3 {
