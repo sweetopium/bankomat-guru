@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Bankomat.guru</title>
+</head>
+<body>
+
+<section class="bg-light-gray hero-section">
+    <div class="container hero-block">
+            <div class="map--image">
+        <img src="static/images/map.svg">
+    </div>
+        <nav class="navbar navbar-light navbar-expand-lg bg-white navbar-block">
+            <div class="container-fluid h-100 navbar-container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="static/images/logo-blue.svg" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="links--list h-100 collapse navbar-collapse ml-5">
+                    <div class="row d-flex h-100">
+                        <div class="col-md-2 navbar--location">
+                            <a href="#" class="text-blue">
+                                Санкт-Петербург
+                            </a>
+                        </div>
+                        <div class="col-md-10 nav-items">
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="bankiMob"
+                                   href="#">Банки</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="bankomatiMob"
+                                   href="#">Банкоматы</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="uslugiMob"
+                                   href="#">Услуги банков</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="articlesMob"
+                                   href="#">Статьи</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="newsMob"
+                                   href="#">Новости</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--search__item">
+                                <a class="nav-link text-blue" id="initSearch"
+                                   href="#"><img src="static/images/seach.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search--form h-100 search--form__hidden">
+                    <div class="row d-flex h-100">
+                        <div class="col-md-7 search--input">
+                            <input class="form-control" placeholder="Поиск по сайту...">
+                        </div>
+                        <div class="col-md-5 nav-items">
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="city"
+                                   href="#">Город</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Москва</a></li>
+                                    <li><a class="dropdown-item" href="#">Омск</a></li>
+                                    <li><a class="dropdown-item" href="#">Новосибирск</a></li>
+                                    <li><a class="dropdown-item" href="#">Сколько макс?</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="locations"
+                                   href="#">Отделение банка</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--search__item">
+                                <a class="nav-link text-blue btn-buy-list" id="search"
+                                   href="#"><img src="static/images/seach.svg" alt="search"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="links--list__mobile is__hidden">
+                <div class="nav-items">
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="banki"
+                           href="#">Банки</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="bankomati"
+                           href="#">Банкоматы</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="uslugi"
+                           href="#">Услуги банков</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="articles"
+                           href="#">Статьи</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="news"
+                           href="#">Новости</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <div class="row hero-bank--logo">
+            <div class="col-md-12">
+                <div class="page-header--title">
+                    <img src="static/images/logos/sberbank.svg" alt="sberbank" class="mb-4">
+                    <h5>Отделения СБЕРБАНК РОССИИ в Кирове (Кировская область)</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row hero-bank--nav">
+            <div class="col-md-12">
+                <ul class="hero-bank--nav-links">
+                    <li class="hero-bank--nav-item  active-item"><a href="#"> О банке</a></li>
+                    <li class="hero-bank--nav-item"><a href="#" > Отделения</a></li>
+                    <li class="hero-bank--nav-item"><a href="#" > Банкоматы</a></li>
+                    <li class="hero-bank--nav-item"><a href="#"> Услуги банка</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-white bank-section">
+    <div class="container bank-block">
+        <div class="row">
+            about
+        </div>
+    </div>
+</section>
+
+<section class="bg-blue footer-section">
+    <div class="container footer-block">
+        <div class="row footer--main">
+            <div class="col-lg-3 col-md-12">
+                <img src="static/images/logo-white.svg" class="img-fluid" alt="logo">
+            </div>
+            <div class="col-lg-2 col-md-12 my-3 my-md-0  footer--city-selector">
+                <a href="#" class="text-white">Санкт Петербург</a>
+            </div>
+            <div class="col-md-7 footer-main-nav">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="text-white">Банки</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white">Банкоматы</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white">Статьи и новости</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row footer--legal">
+            <div class="col-md-12">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="text-white">Политика конфиденциальности</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-blue footer-section--bottom">
+    <div class="container footer-block--bottom">
+        <div class="row">
+            <div class="col-md-6">
+                <p>2020 Bancomat.guru. все о банковских и бонусных картах. Делайте покупки выгодными!</p>
+            </div>
+            <div class="col-md-6">
+                <p>Содержание сайта не является офертой или рекомендацией и носит информационно-справочный характер.
+                    При использовании материалов гиперссылка на karta.guru обязательна. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="static/js/main.js"></script>
+</body>
+</html>
