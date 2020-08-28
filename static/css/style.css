@@ -10,6 +10,7 @@ body {
     --ultra-dark-gray: #111111;
     --gray-3: #828282;
     --dark-blue: #295FFE;
+    --light-blue: #2F80ED;
 }
 
 .modal--opener {
@@ -837,9 +838,55 @@ body {
 
 /* BANK PAGE OFFICES START */
 .offices-tab h1 {
+    font-weight: 300;
     font-size: 32px;
     line-height: 50px;
     color: var(--dark-gray);
+}
+.sidebar--filter h3 {
+     font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--dark-gray);
+}
+.sidebar--filter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar--filter ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.sidebar--filter label {
+    font-size: 14px;
+    line-height: 16px;
+}
+.filter__checked label {
+    color: var(--light-blue)
+}
+.filter--results {
+    display: flex;
+    align-items: center;
+    width: 70px;
+}
+.filter__delete {
+    color: var(--light-blue);
+    font-size: 10px;
+    border: 1px solid var(--light-blue);
+    padding: 0 5px 1px 4px;
+    margin-left: 5px;
+}
+.filter__delete:hover {
+    cursor: pointer;
+    background: var(--light-blue);
+    color: #fff;
+}
+.offices-tab--map iframe {
+    width: 100%;
+    min-height: 500px;
 }
 /* BANK PAGE OFFICES END */
 
