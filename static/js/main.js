@@ -12,6 +12,35 @@ function headerSearchHandler() {
     }
 }
 
+function handleMapTabs() {
+        const tabSelectors = document.querySelectorAll('.tab__selector');
+        tabSelectors.forEach((btn, index) => {
+            btn.onclick = function () {
+                if(btn.id === 'onMap') {
+                    console.log(index)
+                   btn.classList.remove('btn-outline-blue');
+                   btn.classList.add('btn-blue');
+                   tabSelectors[index + 1].classList.remove('btn-blue');
+                   tabSelectors[index + 1].classList.add('btn-outline-blue');
+                   let officesTabMap = document.querySelector('.offices-tab--map');
+                   officesTabMap.classList.remove('inactive__tab');
+                   let officesTabList = document.querySelector('.offices-tab--list');
+                   officesTabList.classList.add('inactive__tab')
+                } else {
+                   btn.classList.remove('btn-outline-blue');
+                   btn.classList.add('btn-blue');
+                   tabSelectors[0].classList.remove('btn-blue');
+                   tabSelectors[0].classList.add('btn-outline-blue');
+                   let officesTabMap = document.querySelector('.offices-tab--map');
+                   officesTabMap.classList.add('inactive__tab');
+                   let officesTabList = document.querySelector('.offices-tab--list');
+                   officesTabList.classList.remove('inactive__tab')
+                }
+            }
+    });
+
+    }
+
 let toClose = false;
 
 function toggle(e) {
@@ -67,6 +96,7 @@ window.addEventListener("DOMContentLoaded", function () {
       console.log('navbar')
     };
 
+    handleMapTabs();
     headerSearchHandler();
 });
 

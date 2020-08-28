@@ -888,6 +888,130 @@ body {
     width: 100%;
     min-height: 500px;
 }
+.venue--item__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.venue--item__logo img {
+    max-width: 110px;
+}
+.venue--item__is-open {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #27AE60;
+    position: relative;
+}
+.venue--item__is-open::before {
+    content: "\2022";
+    color: #27AE60;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    font-size: 50px;
+    margin-left: -.5em;
+    position: absolute;
+}
+.venue--item__address p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--dark-gray);
+    display: inline-block;
+    border-bottom: 1px dashed var(--dark-gray);
+}
+
+.venue--items__metro {
+    margin-left: 10px;
+}
+
+.venue--item__metro {
+    position: relative;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--gray-3);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.blue::before {
+    content: "\2022";
+    color: var(--dark-blue);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    font-size: 30px;
+    margin-left: -.5em;
+    position: absolute;
+}
+.red::before {
+    content: "\2022";
+    color: #EB5757;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    font-size: 30px;
+    margin-left: -.5em;
+    position: absolute;
+}
+.green::before {
+    content: "\2022";
+    color: #27AE60;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    font-size: 30px;
+    margin-left: -.5em;
+    position: absolute;
+}
+.second--col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.second--col span {
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--gray-3);
+    margin-top: 0;
+}
+
+.venue--item {
+    padding-bottom: 40px;
+    border-bottom: 2px solid var(--light-gray);
+}
+.venue--item__name h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--dark-gray);
+    margin-bottom: -10px;
+}
+.venue--item__time .time-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third--col h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--dark-gray);
+}
+
+.third--col ul{
+    padding-left: 1rem;
+    color: var(--gray-3);
+    font-size: 14px;
+    line-height: 20px;
+}
+.third--col ul li {
+    margin-bottom: 15px;
+}
+.inactive__tab {
+    display: none;
+}
 /* BANK PAGE OFFICES END */
 
 .bg-light-gray {
