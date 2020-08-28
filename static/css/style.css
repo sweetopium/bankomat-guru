@@ -12,6 +12,15 @@ body {
     --dark-blue: #295FFE;
 }
 
+.modal--opener {
+    text-decoration: none;
+    border-bottom: 1px dashed var(--dark-blue);
+}
+
+.modal--opener:hover {
+    border-bottom: none;
+}
+
 .navbar {
     position: relative;
     padding-top: 0;
@@ -743,9 +752,96 @@ body {
 .hero-bank--nav-item a {
     text-decoration: none;
 }
+.bank--name h1 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 2rem;
+}
+
+.bank--about h3 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--dark-gray)
+}
+
+.bank--about p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--dark-gray)
+}
+.bank--meta-item h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--dark-gray)
+}
+.bank--meta-item p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--gray-3)
+}
+
+.bank--meta-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.bank--meta-item__text {
+    margin: 0 30px 0 30px;
+    flex: 2;
+    text-align: left;
+}
+.bank--meta-item__header {
+    flex: 1;
+}
+@media (max-width: 768px) {
+    .bank--meta-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .bank--meta-item__text {
+        margin: 0;
+        flex: 2;
+        text-align: left;
+    }
+    .map--image {
+        display: none;
+    }
+
+    .hero-bank--logo img {
+        width: 100%;
+    }
+    .hero-bank--nav {
+        margin-top: 20px
+    }
+
+    .hero-bank--nav-links{
+        list-style-type:none;
+        white-space:nowrap;
+        overflow-x:auto;
+    }
+
+    .hero-bank--nav-item {
+        padding: 0;
+    }
+
+}
 /* BANK PAGE END */
 
-
+/* BANK PAGE OFFICES START */
+.offices-tab h1 {
+    font-size: 32px;
+    line-height: 50px;
+    color: var(--dark-gray);
+}
+/* BANK PAGE OFFICES END */
 
 .bg-light-gray {
   background-color: var(--light-gray) !important;
