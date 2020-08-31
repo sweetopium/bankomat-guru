@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Bankomat.guru</title>
+</head>
+<body>
+
+<section class="bg-light-gray hero-section">
+    <div class="container hero-block">
+        <div class="map--image">
+            <img src="static/images/map.svg">
+        </div>
+        <nav class="navbar navbar-light navbar-expand-lg bg-white navbar-block">
+            <div class="container-fluid h-100 navbar-container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="static/images/logo-blue.svg" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="links--list h-100 collapse navbar-collapse ml-5">
+                    <div class="row d-flex h-100">
+                        <div class="col-md-2 navbar--location">
+                            <a href="#" class="text-blue">
+                                Санкт-Петербург
+                            </a>
+                        </div>
+                        <div class="col-md-10 nav-items">
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="bankiMob"
+                                   href="#">Банки</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="bankomatiMob"
+                                   href="#">Банкоматы</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="uslugiMob"
+                                   href="#">Услуги банков</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="articlesMob"
+                                   href="#">Статьи</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="newsMob"
+                                   href="#">Новости</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Отделения</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--search__item">
+                                <a class="nav-link text-blue" id="initSearch"
+                                   href="#"><img src="static/images/seach.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search--form h-100 search--form__hidden">
+                    <div class="row d-flex h-100">
+                        <div class="col-md-7 search--input">
+                            <input class="form-control" placeholder="Поиск по сайту...">
+                        </div>
+                        <div class="col-md-5 nav-items">
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="city"
+                                   href="#">Город</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Москва</a></li>
+                                    <li><a class="dropdown-item" href="#">Омск</a></li>
+                                    <li><a class="dropdown-item" href="#">Новосибирск</a></li>
+                                    <li><a class="dropdown-item" href="#">Сколько макс?</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--dropdown-nav__item">
+                                <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="locations"
+                                   href="#">Отделение банка</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                                    <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar--search__item">
+                                <a class="nav-link text-blue btn-buy-list" id="search"
+                                   href="#"><img src="static/images/seach.svg" alt="search"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="links--list__mobile is__hidden">
+                <div class="nav-items">
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="banki"
+                           href="#">Банки</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="bankomati"
+                           href="#">Банкоматы</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="uslugi"
+                           href="#">Услуги банков</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="articles"
+                           href="#">Статьи</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar--dropdown-nav__item">
+                        <a class="nav-link dropdown-toggle text-gray btn-buy-list" id="news"
+                           href="#">Новости</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Банкоматы</a></li>
+                            <li><a class="dropdown-item" href="#">Отделения</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <div class="row hero-bank--logo">
+            <div class="col-md-12">
+                <div class="page-header--title atm--title">
+                    <img src="static/images/logos/sberbank.svg" alt="sberbank" class="mb-4">
+                    <h2>Банкомат Сбербанка — м. Новочеркасская, Санкт-Петербург</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row hero-bank--nav">
+            <div class="col-md-12">
+                <ul class="hero-bank--nav-links">
+                    <li class="hero-bank--nav-item  active-item"><a href="atm-page.html"> О банке</a></li>
+                    <li class="hero-bank--nav-item"><a href="bank-services.html"> Услуги банка</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-white bank-section">
+    <div class="container bank-block--atm">
+        <div class="row mb-5">
+            <div class="col-md-6 atm--main">
+                <div class="row mb-4 mt-5 venue--item atm-venue--item">
+                    <div class="col-md-12 mb-4 amt--logo pl-4 mb-4">
+                        <img src="static/images/logos/sberbank.svg">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="px-3">
+                            <div class="venue--item__name">
+                                <h5>Отделение № 010441 и банкомат</h5>
+                                <span>Медицинское учреждение</span>
+                            </div>
+                            <div class="venue--items__metro mt-3">
+                                <span class="venue--item__metro blue">Улица 1905 Года (540 м пешком)</span>
+                                <span class="venue--item__metro green">Краснопресненская (600 м пешком)</span>
+                                <span class="venue--item__metro red">Баррикадная (870 м пешком)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3 mt-md-0">
+                        <div class="px-3 second--col h-100">
+                            <div class="venue--item__logo ml-4">
+                                <span class="venue--item__is-open">Открыто</span>
+                            </div>
+                            <div class="venue--item__time">
+                                <div class="time-item">
+                                    <span>Понедельник — пятница</span>
+                                    <span>8:00–20:00</span>
+                                </div>
+                                <div class="time-item">
+                                    <span>Суббота</span>
+                                    <span>9:00–16:00</span>
+                                </div>
+                            </div>
+                            <div class="venue--item__text">
+                                <span>Обслуживание физ лиц, юридических лиц и VIP сервис</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 atm-venue--item__services">
+                    <ul class="hero-bank--nav-links ml-3 ml-md-0">
+                        <li class="hero-bank--nav-item  active-item"><a href="atm-page.html"> Услуги для физлиц</a></li>
+                        <li class="hero-bank--nav-item"><a href="bank-services.html"> Услуги для юрлиц</a></li>
+                        <li class="hero-bank--nav-item"><a href="bank-services.html"> Услуги для Премьер</a></li>
+                    </ul>
+                    <div class="row mt-4 services--wrapper">
+                        <div class="col-md-6 ">
+                            <ul class="services--list">
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="services--list">
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 atm--card">
+                <div class="card">
+                    <img src="static/images/tink-servis.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Счет в банке для физических лиц</h5>
+                        <div class="card-body--tariffs">
+                            <div class="card-body--tariff-item">
+                                <span>Стоимость от</span>
+                                <span>0 руб</span>
+                            </div>
+                            <div class="card-body--tariff-item">
+                                <span>Кэшбек</span>
+                                <span>1-30%</span>
+                            </div>
+                            <div class="card-body--tariff-item">
+                                <span>% на остаток</span>
+                                <span>3,5%</span>
+                            </div>
+                            <div class="card-body--tariff-item">
+                                <span>Снятие без %</span>
+                                <span>От 3 000 руб</span>
+                            </div>
+                            <div class="card-body--tariff-item">
+                                <span>Овердрафт</span>
+                                <span>Есть</span>
+                            </div>
+                            <div class="card-body--tariff-item">
+                                <span>Доставка</span>
+                                <span>1-2 дня</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 atm--sidebar">
+                <img src="static/images/small-banner.jpg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light-gray bank-section">
+    <div class="container bank-block--atm__nearme">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3 mb-3 mb-md-0 atm--single-card">
+                        <div class="card">
+                            <img src="static/images/map-card.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <img src="static/images/logos/sberbank.svg" class="atm--card__bank-logo">
+                                <h5 class="card-title card--title__atm">Отделение банка,  банкомат</h5>
+                                <p class="card-address">пр-кт Новочеркасский, д. 26/16 офисное здание рядом с метро</p>
+                                <div class="venue--items__metro mt-3">
+                                <span class="venue--item__metro blue">Улица 1905 Года (540 м пешком)</span>
+                                <span class="venue--item__metro green">Краснопресненская (600 м пешком)</span>
+                                <span class="venue--item__metro red">Баррикадная (870 м пешком)</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3 mb-md-0 atm--single-card">
+                        <div class="card">
+                            <img src="static/images/map-card.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <img src="static/images/logos/sberbank.svg" class="atm--card__bank-logo">
+                                <h5 class="card-title card--title__atm">Отделение банка,  банкомат</h5>
+                                <p class="card-address">пр-кт Новочеркасский, д. 26/16 офисное здание рядом с метро</p>
+                                <div class="venue--items__metro mt-3">
+                                <span class="venue--item__metro blue">Улица 1905 Года (540 м пешком)</span>
+                                <span class="venue--item__metro green">Краснопресненская (600 м пешком)</span>
+                                <span class="venue--item__metro red">Баррикадная (870 м пешком)</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3 mb-md-0 atm--single-card">
+                        <div class="card">
+                            <img src="static/images/map-card.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <img src="static/images/logos/sberbank.svg" class="atm--card__bank-logo">
+                                <h5 class="card-title card--title__atm">Отделение банка,  банкомат</h5>
+                                <p class="card-address">пр-кт Новочеркасский, д. 26/16 офисное здание рядом с метро</p>
+                                <div class="venue--items__metro mt-3">
+                                <span class="venue--item__metro blue">Улица 1905 Года (540 м пешком)</span>
+                                <span class="venue--item__metro green">Краснопресненская (600 м пешком)</span>
+                                <span class="venue--item__metro red">Баррикадная (870 м пешком)</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3 mb-md-0 atm--single-card">
+                        <div class="card">
+                            <img src="static/images/map-card.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <img src="static/images/logos/sberbank.svg" class="atm--card__bank-logo">
+                                <h5 class="card-title card--title__atm">Отделение банка,  банкомат</h5>
+                                <p class="card-address">пр-кт Новочеркасский, д. 26/16 офисное здание рядом с метро</p>
+                                <div class="venue--items__metro mt-3">
+                                <span class="venue--item__metro blue">Улица 1905 Года (540 м пешком)</span>
+                                <span class="venue--item__metro green">Краснопресненская (600 м пешком)</span>
+                                <span class="venue--item__metro red">Баррикадная (870 м пешком)</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-blue footer-section">
+    <div class="container footer-block">
+        <div class="row footer--main">
+            <div class="col-lg-3 col-md-12">
+                <img src="static/images/logo-white.svg" class="img-fluid" alt="logo">
+            </div>
+            <div class="col-lg-2 col-md-12 my-3 my-md-0  footer--city-selector">
+                <a href="#" class="text-white">Санкт Петербург</a>
+            </div>
+            <div class="col-md-7 footer-main-nav">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="text-white">Банки</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white">Банкоматы</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white">Статьи и новости</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row footer--legal">
+            <div class="col-md-12">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="text-white">Политика конфиденциальности</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-blue footer-section--bottom">
+    <div class="container footer-block--bottom">
+        <div class="row">
+            <div class="col-md-6">
+                <p>2020 Bancomat.guru. все о банковских и бонусных картах. Делайте покупки выгодными!</p>
+            </div>
+            <div class="col-md-6">
+                <p>Содержание сайта не является офертой или рекомендацией и носит информационно-справочный характер.
+                    При использовании материалов гиперссылка на karta.guru обязательна. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="static/js/main.js"></script>
+</body>
+</html>
