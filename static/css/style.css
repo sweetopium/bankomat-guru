@@ -296,6 +296,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px 0;
 }
 
 .bank--logo:hover {
@@ -1110,6 +1111,67 @@ body {
     color: var(--dark-gray);
 }
 /* ATM PAGE MAIN END */
+
+
+/* ATMS LIST START */
+.bank-block--atms {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+.atms-list--title {
+    margin-bottom: 100px;
+}
+.atm--main__header {
+    display: flex;
+    justify-content: space-between;
+}
+.atm--main__header h4 {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 300;
+    color: var(--dark-gray);
+    flex:1
+
+}
+.atm--main__header--search {
+    position: relative;
+}
+.atm--main__header--search input {
+
+    padding: 15px 20px 15px 38px;
+}
+.atm--main__header--search span:after {
+    content: ' ';
+    position: absolute;
+    background-image: url('../images/search.svg');
+    background-size: 13px 13px;
+    height: 13px;
+    width: 13px;
+    top: 22px;
+    right: 18px;
+}
+@media (max-width: 768px) {
+    .atm--main__header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .atm--main__header--search input {
+        width: 100%;
+        padding: 15px 20px 15px 20px;
+    }
+    .bank--logo img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 411px){
+    .bank--logo img {
+        max-width: 320px;
+    }
+
+}
+/* ATMS LIST END */
 
 .bg-light-gray {
   background-color: var(--light-gray) !important;
