@@ -1014,6 +1014,26 @@ body {
 }
 /* BANK PAGE OFFICES END */
 
+/* BANK PAGE SERVICES START */
+.services--list h5 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    color: var(--dark-gray);
+}
+.card-body--tariffs {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    color: var(--gray-3);
+}
+.card-body--tariff-item {
+    display: flex;
+    justify-content: space-between;
+
+}
+/* BANK PAGE SERVICES END */
+
 .bg-light-gray {
   background-color: var(--light-gray) !important;
 }
