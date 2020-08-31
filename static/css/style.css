@@ -1150,6 +1150,15 @@ body {
     top: 22px;
     right: 18px;
 }
+.atms--list {
+    margin-top: 0;
+}
+.atms--list:first-of-type {
+    margin-top: 30px;
+}
+.atms--list  .bank--logo {
+    border: 1px solid #F2F2F2;
+}
 @media (max-width: 768px) {
     .atm--main__header {
         display: flex;
