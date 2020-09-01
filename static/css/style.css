@@ -1126,6 +1126,40 @@ body {
 }
 .atm--card, .atm--sidebar {
     padding-top: 110px;
+    position: relative;
+}
+.atm--card .arrow-left {
+    content: ' ';
+    position: absolute;
+    background-image: url('../images/arrow-left.svg');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 40px;
+    width: 40px;
+    top: 34%;
+    left: 12px;
+    z-index: 5;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.atm--card .arrow-right {
+    content: ' ';
+    position: absolute;
+    background-image: url('../images/arrow-right.svg');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 40px;
+    width: 40px;
+    top: 34%;
+    right: 12px;
+    z-index: 5;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.inactive--card {
+    display: none;
 }
 .services--wrapper ul.services--list {
     font-size: 14px;

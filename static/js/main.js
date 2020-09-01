@@ -41,6 +41,34 @@ function handleMapTabs() {
 
 }
 
+function handleProductsSlider() {
+    const arrowLeft = document.querySelector('.arrow-left');
+    const arrowRight = document.querySelector('.arrow-right');
+    const bankProductCards = document.querySelectorAll(".bank--product-card")
+    let currentCard = 0;
+    const bankProductCardsLen = bankProductCards.length;
+    arrowLeft.onclick = function () {
+        if (currentCard > 0) {
+            bankProductCards.forEach((card, index) => {
+                card.classList.remove("active--card");
+                card.classList.add("inactive--card");
+            });
+            currentCard--;
+            bankProductCards[currentCard].classList.remove("inactive--card");
+            bankProductCards[currentCard].classList.add("active--card")
+        }
+    };
+    arrowRight.onclick = function () {
+        if (bankProductCardsLen > currentCard + 1) {
+            bankProductCards[currentCard].classList.add("inactive--card");
+            bankProductCards[currentCard].classList.remove("active--card")
+            currentCard++;
+            bankProductCards[currentCard].classList.remove("inactive--card");
+            bankProductCards[currentCard].classList.add("active--card")
+        }
+    };
+}
+
 function handleServiceTabs() {
     const tabSwitchers = document.querySelectorAll('.tab--switcher');
     const tabsList = document.querySelectorAll('.services--tab');
@@ -114,6 +142,8 @@ window.addEventListener("DOMContentLoaded", function () {
         }
     };
 
+
+    handleProductsSlider();
     handleServiceTabs();
     handleMapTabs();
     headerSearchHandler();
