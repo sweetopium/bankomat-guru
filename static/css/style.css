@@ -46,6 +46,7 @@ body {
 
 .navbar-toggler {
     margin-right: 20px;
+    border: none;
 }
 
 .navbar-container {
@@ -493,7 +494,7 @@ body {
 
 .footer-section--bottom p {
     font-weight: 500;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 100%;
     color: #E0E0E0;
 }
@@ -723,6 +724,16 @@ body {
     position: absolute;
     right: 0;
 }
+.map--real {
+    height: 100%;
+    max-width: 750px;
+    min-width: 550px;
+    right: 50px;
+}
+.map--real iframe {
+    width: 100%;
+    height: 100%;
+}
 .hero-bank--logo .page-header--title h5 {
     font-weight: 300;
     font-size: 18px;
@@ -741,14 +752,21 @@ body {
     display: inline-block;
     margin-right: 30px;
     padding: 0 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
 }
 .hero-bank--nav-item a {
     color: var(--gray-3);
 }
 .active-item {
     border-bottom: 2px solid var(--dark-blue);
+    color: var(--dark-blue) !important;
 }
 .active-item a {
+    color: var(--dark-blue)
+}
+.hero-bank--nav-item .active-item a {
     color: var(--dark-blue)
 }
 .hero-bank--nav-item a {
@@ -825,13 +843,29 @@ body {
     }
 
     .hero-bank--nav-links{
-        list-style-type:none;
-        white-space:nowrap;
-        overflow-x:auto;
+        padding: 0;
+    }
+    .hero-bank--nav-links li {
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .hero-bank--nav-links li a {
+        font-size: 13px;
     }
 
     .hero-bank--nav-item {
         padding: 0;
+    }
+    .footer--city-selector {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 34px;
+    }
+    .footer-main-nav li {
+        display: block;
+        margin-left: 10px;
     }
 
 }
@@ -1037,6 +1071,12 @@ body {
 
 
 /* ATM PAGE MAIN START */
+.tab--switcher {
+    cursor: pointer;
+}
+.inactive--tab {
+    display: none;
+}
 .atm--title {
     max-width: 550px;
 }
@@ -1067,6 +1107,9 @@ body {
 .atm-venue--item__services  ul {
     border-bottom: 2px solid var(--gray-3);
 }
+.atm-venue--item__services .hero-bank--nav-item {
+    padding: 0 !important;
+}
 .atm-venue--item__services .active-item {
     position: relative;
     border-bottom: none;
@@ -1074,7 +1117,7 @@ body {
 .atm-venue--item__services .active-item:after {
   content: '';
   position: absolute;
-  top: 59%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -1109,6 +1152,10 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: var(--dark-gray);
+}
+.atm--single-card .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 /* ATM PAGE MAIN END */
 

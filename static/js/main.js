@@ -13,33 +13,53 @@ function headerSearchHandler() {
 }
 
 function handleMapTabs() {
-        const tabSelectors = document.querySelectorAll('.tab__selector');
-        tabSelectors.forEach((btn, index) => {
-            btn.onclick = function () {
-                if(btn.id === 'onMap') {
-                    console.log(index)
-                   btn.classList.remove('btn-outline-blue');
-                   btn.classList.add('btn-blue');
-                   tabSelectors[index + 1].classList.remove('btn-blue');
-                   tabSelectors[index + 1].classList.add('btn-outline-blue');
-                   let officesTabMap = document.querySelector('.offices-tab--map');
-                   officesTabMap.classList.remove('inactive__tab');
-                   let officesTabList = document.querySelector('.offices-tab--list');
-                   officesTabList.classList.add('inactive__tab')
-                } else {
-                   btn.classList.remove('btn-outline-blue');
-                   btn.classList.add('btn-blue');
-                   tabSelectors[0].classList.remove('btn-blue');
-                   tabSelectors[0].classList.add('btn-outline-blue');
-                   let officesTabMap = document.querySelector('.offices-tab--map');
-                   officesTabMap.classList.add('inactive__tab');
-                   let officesTabList = document.querySelector('.offices-tab--list');
-                   officesTabList.classList.remove('inactive__tab')
-                }
+    const tabSelectors = document.querySelectorAll('.tab__selector');
+    tabSelectors.forEach((btn, index) => {
+        btn.onclick = function () {
+            if (btn.id === 'onMap') {
+                console.log(index)
+                btn.classList.remove('btn-outline-blue');
+                btn.classList.add('btn-blue');
+                tabSelectors[index + 1].classList.remove('btn-blue');
+                tabSelectors[index + 1].classList.add('btn-outline-blue');
+                let officesTabMap = document.querySelector('.offices-tab--map');
+                officesTabMap.classList.remove('inactive__tab');
+                let officesTabList = document.querySelector('.offices-tab--list');
+                officesTabList.classList.add('inactive__tab')
+            } else {
+                btn.classList.remove('btn-outline-blue');
+                btn.classList.add('btn-blue');
+                tabSelectors[0].classList.remove('btn-blue');
+                tabSelectors[0].classList.add('btn-outline-blue');
+                let officesTabMap = document.querySelector('.offices-tab--map');
+                officesTabMap.classList.add('inactive__tab');
+                let officesTabList = document.querySelector('.offices-tab--list');
+                officesTabList.classList.remove('inactive__tab')
             }
+        }
     });
 
-    }
+}
+
+function handleServiceTabs() {
+    const tabSwitchers = document.querySelectorAll('.tab--switcher');
+    const tabsList = document.querySelectorAll('.services--tab');
+    tabSwitchers.forEach((btn, index) => {
+        btn.onclick = function () {
+            tabSwitchers.forEach(b => b.classList.remove("active-item"))
+            tabsList.forEach((tab) => {
+                tab.classList.remove("active--tab");
+                tab.classList.add("inactive--tab");
+                if (tab.classList.contains(btn.id)) {
+                    tab.classList.remove("inactive--tab");
+                    tab.classList.add("active--tab");
+                    btn.classList.add("active-item");
+                    console.log(tab)
+                }
+            });
+        }
+    });
+}
 
 let toClose = false;
 
@@ -83,19 +103,18 @@ window.addEventListener("DOMContentLoaded", function () {
     const navbarToggler = document.querySelector('.navbar-toggler');
     let navbarOpened = false;
     navbarToggler.onclick = function () {
-      const linksList = document.querySelector('.links--list__mobile');
+        const linksList = document.querySelector('.links--list__mobile');
 
-      if (!navbarOpened) {
-          linksList.classList.remove('is__hidden');
-          navbarOpened = true
-      } else {
-          linksList.classList.add('is__hidden');
-          navbarOpened = false
-      }
-
-      console.log('navbar')
+        if (!navbarOpened) {
+            linksList.classList.remove('is__hidden');
+            navbarOpened = true
+        } else {
+            linksList.classList.add('is__hidden');
+            navbarOpened = false
+        }
     };
 
+    handleServiceTabs();
     handleMapTabs();
     headerSearchHandler();
 });

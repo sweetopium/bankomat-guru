@@ -11,8 +11,8 @@
 
 <section class="bg-light-gray hero-section">
     <div class="container hero-block">
-        <div class="map--image">
-            <img src="static/images/map.svg">
+        <div class="map--image map--real">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCQtj8sUGD" style="position:relative;"></iframe>
         </div>
         <nav class="navbar navbar-light navbar-expand-lg bg-white navbar-block">
             <div class="container-fluid h-100 navbar-container">
@@ -231,11 +231,11 @@
                 </div>
                 <div class="row mt-5 atm-venue--item__services">
                     <ul class="hero-bank--nav-links ml-3 ml-md-0">
-                        <li class="hero-bank--nav-item  active-item"><a href="atm-page.html"> Услуги для физлиц</a></li>
-                        <li class="hero-bank--nav-item"><a href="bank-services.html"> Услуги для юрлиц</a></li>
-                        <li class="hero-bank--nav-item"><a href="bank-services.html"> Услуги для Премьер</a></li>
+                        <li class="hero-bank--nav-item"><a class="tab--switcher active-item" id="forPhysics"> Для физлиц</a></li>
+                        <li class="hero-bank--nav-item"><a class="tab--switcher" id="forLegal"> Для юрлиц</a></li>
+                        <li class="hero-bank--nav-item"><a class="tab--switcher" id="forPremier"> Для Премьер</a></li>
                     </ul>
-                    <div class="row mt-4 services--wrapper">
+                    <div class="row mt-4 services--wrapper services--tab forPhysics active--tab" id="physics">
                         <div class="col-md-6 ">
                             <ul class="services--list">
                                 <li>Внести</li>
@@ -257,6 +257,61 @@
                                 <li>Внести</li>
                                 <li>Оплатить и перевести</li>
                                 <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-4 services--wrapper services--tab forLegal inactive--tab" id="legal">
+                        <div class="col-md-6 ">
+                            <ul class="services--list">
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="services--list">
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-4 services--wrapper services--tab forPremier inactive--tab" id="premier">
+                        <div class="col-md-6 ">
+                            <ul class="services--list">
+                                <li>Прием наличных по одной купюре</li>
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                                <li>Внести</li>
+                                <li>Оплатить и перевести</li>
+                                <li>Бесконтактное обслуживание (NFC)</li>
+                                <li>Прием наличных по одной купюре</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="services--list">
                                 <li>Прием наличных по одной купюре</li>
                                 <li>Внести</li>
                                 <li>Оплатить и перевести</li>
@@ -413,12 +468,8 @@
 <section class="bg-blue footer-section--bottom">
     <div class="container footer-block--bottom">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <p>2020 Bancomat.guru. все о банковских и бонусных картах. Делайте покупки выгодными!</p>
-            </div>
-            <div class="col-md-6">
-                <p>Содержание сайта не является офертой или рекомендацией и носит информационно-справочный характер.
-                    При использовании материалов гиперссылка на karta.guru обязательна. </p>
             </div>
         </div>
     </div>
