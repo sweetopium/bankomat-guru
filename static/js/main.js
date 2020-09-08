@@ -47,26 +47,31 @@ function handleProductsSlider() {
     const bankProductCards = document.querySelectorAll(".bank--product-card")
     let currentCard = 0;
     const bankProductCardsLen = bankProductCards.length;
-    arrowLeft.onclick = function () {
-        if (currentCard > 0) {
-            bankProductCards.forEach((card, index) => {
-                card.classList.remove("active--card");
-                card.classList.add("inactive--card");
-            });
-            currentCard--;
-            bankProductCards[currentCard].classList.remove("inactive--card");
-            bankProductCards[currentCard].classList.add("active--card")
-        }
-    };
-    arrowRight.onclick = function () {
-        if (bankProductCardsLen > currentCard + 1) {
-            bankProductCards[currentCard].classList.add("inactive--card");
-            bankProductCards[currentCard].classList.remove("active--card")
-            currentCard++;
-            bankProductCards[currentCard].classList.remove("inactive--card");
-            bankProductCards[currentCard].classList.add("active--card")
-        }
-    };
+
+    if (arrowLeft) {
+        arrowLeft.onclick = function () {
+            if (currentCard > 0) {
+                bankProductCards.forEach((card, index) => {
+                    card.classList.remove("active--card");
+                    card.classList.add("inactive--card");
+                });
+                currentCard--;
+                bankProductCards[currentCard].classList.remove("inactive--card");
+                bankProductCards[currentCard].classList.add("active--card")
+            }
+        };
+    }
+    if (arrowRight) {
+        arrowRight.onclick = function () {
+            if (bankProductCardsLen > currentCard + 1) {
+                bankProductCards[currentCard].classList.add("inactive--card");
+                bankProductCards[currentCard].classList.remove("active--card")
+                currentCard++;
+                bankProductCards[currentCard].classList.remove("inactive--card");
+                bankProductCards[currentCard].classList.add("active--card")
+            }
+        };
+    }
 }
 
 function handleServiceTabs() {
@@ -82,7 +87,6 @@ function handleServiceTabs() {
                     tab.classList.remove("inactive--tab");
                     tab.classList.add("active--tab");
                     btn.classList.add("active-item");
-                    console.log(tab)
                 }
             });
         }
@@ -141,6 +145,23 @@ window.addEventListener("DOMContentLoaded", function () {
             navbarOpened = false
         }
     };
+
+    const showFilter = document.querySelector('.show--filter');
+    if (showFilter) {
+        showFilter.onclick = function () {
+            const filterBlock = document.querySelector('.sidebar--filter');
+            if (filterBlock.classList.contains("d-none")) {
+                filterBlock.classList.remove("d-none");
+                filterBlock.classList.add("d-block");
+            } else {
+                filterBlock.classList.remove("d-block");
+                filterBlock.classList.add("d-none");
+            }
+
+
+            console.log('show')
+        }
+    }
 
 
     handleProductsSlider();
