@@ -76,6 +76,7 @@ body {
     right: 0;
     top: 77px;
     min-height: 230px;
+    z-index: 20;
 }
 
 .links--list__mobile .nav-items {
